@@ -1,10 +1,10 @@
-//criando uma instancia da classe negociação
+import { NegociacaoController } from './controllers/negociacao-controller.js';
 
-//Importando a classe
-import { Negociacao } from './models/negociacao.js'
+const controller = new NegociacaoController();
 
-//criando a instancia da negociacao
-const negociacao = new Negociacao(new Date(), 10, 100);
+const form = document.querySelector('.form');
 
-console.log(negociacao.data);
-
+form.addEventListener('submit', event => {
+    event.preventDefault();
+    controller.adiciona();
+})
