@@ -1,4 +1,4 @@
-# typescript_alura_1
+# typescript_alura
 Curso de TypeScript da plataforma alura.
 
 O curso tem por objetivo :
