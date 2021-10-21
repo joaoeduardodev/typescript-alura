@@ -4,7 +4,7 @@ export abstract class View<T>{
     constructor(selector: string){
         this.elemento = document.querySelector(selector)
     }
-
+   
        // Realizar a renderição do elemento que foi capturado atrvés do construtor na DOM
     update(model: T):void{
         const template = this.template(model)
