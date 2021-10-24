@@ -6,11 +6,11 @@ export abstract class View<T>{
     }
    
        // Realizar a renderição do elemento que foi capturado atrvés do construtor na DOM
-    update(model: T):void{
+    public update(model: T):void{
         const template = this.template(model)
 
          this.elemento.innerHTML = template;
     }
 
-    abstract template(model: T): string;
+    protected abstract template(model: T): string;
 }
